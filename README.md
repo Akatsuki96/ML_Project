@@ -1,11 +1,11 @@
 # ML_Project
 The project is composed by different perl program realized from scratch (so i'm sorry for the performance in terms of time).
-##1) Set-up:
+## Set-up:
 	1) Download the repository (git clone )
 	2) go to the directory of the project (cd )
 	3) execute there the programs using perl (i.e. perl graph.plx ...)
 
-##2) Requirements:
+## Requirements:
 	0) You need the perl interpreter
 	1) You need to install gnuplot
 	2) You have to download the following perl module (using cpan):
@@ -17,12 +17,12 @@ The project is composed by different perl program realized from scratch (so i'm 
 		-) cpan Math::Random
 		-) cpan bignum
 		-) cpan diagnostics
-##3) "Heart" dataset: 
+## "Heart" dataset: 
 Since it was produced on windows, it has some windows character (like '^M'). We have to erase them through the command: perl -p -e 's/\r$//' heart.csv heart.csv:
 	1) Download heart.csv from https://www.kaggle.com/ronitf/heart-disease-uci
 	2) perl -p -e 's/\r$//' heart.csv heart.csv to remove windows characters
 
-##4) Programs and Description:
+## Programs and Description:
 	1) graph.plx: Program which execute the Posterior Rule and the Prior Rule.
 		Command: perl graph.plx <number of point> <mean class 1> <mean class 2> <standard dev 1> <standard dev 2> <percentage of point in class 1>
 		Uses: Point/Point.pm class which define a point, BDT/BDT.pm module which implements methods for applying the posterior and prior rule (and other useful functions)
