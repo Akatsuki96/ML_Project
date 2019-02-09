@@ -19,19 +19,21 @@ The project is composed by different perl program realized from scratch (so i'm 
 		-) cpan diagnostics
 ## "Heart" dataset: 
 Since it was produced on windows, it has some windows character (like '^M'). We have to erase them through the command: perl -p -e 's/\r$//' heart.csv heart.csv:
+	
 	1) Download heart.csv from https://www.kaggle.com/ronitf/heart-disease-uci
 	2) perl -p -e 's/\r$//' heart.csv heart.csv to remove windows characters
 
 ## Programs and Description:
-	1) graph.plx: Program which execute the Posterior Rule and the Prior Rule.
+1) graph.plx: Program which execute the Posterior Rule and the Prior Rule.
 		Command: perl graph.plx <number of point> <mean class 1> <mean class 2> <standard dev 1> <standard dev 2> <percentage of point in class 1>
 		Uses: Point/Point.pm class which define a point, BDT/BDT.pm module which implements methods for applying the posterior and prior rule (and other useful functions)
-	2) main.plx: Program which execute the structure learning algorithm. It doesn't require any parameters.
+2) main.plx: Program which execute the structure learning algorithm. It doesn't require any parameters.
 				 The algorithm realized is the Greedy Hill Climbing and (with heart dataset) it will take a lot of hours to be completed (and this can be justified  from the fact that there are a many relationship between the attributes).
-	3) naive_bayes_classifier.plx: It implements a naive bayes classifier for multi-class classification problem.
+3) naive_bayes_classifier.plx: It implements a naive bayes classifier for multi-class classification problem.
 		Command: perl naive_bayes_classifier.plx <split_ratio> <index_of_class>
-		Whwre <split_ratio> indicates how many lines you take for the train part (i.e. 0.3 => training part will be the 30% of the dataset)
-			   <index_of_class> index of the attribute used for classification (the presentation use 2) (Index starts from 0)
+		Where: 
+			-)<split_ratio> indicates how many lines you take for the train part (i.e. 0.3 => training part will be the 30% of the dataset)
+		   	-)<index_of_class> index of the attribute used for classification (the presentation use 2) (Index starts from 0)
 
 ## Tests used in the presentation:
 		perl graph.plx 500000 0 0.8 0.5 0.5 0.3
