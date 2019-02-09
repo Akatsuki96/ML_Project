@@ -21,8 +21,10 @@ The project is composed by different perl program realized from scratch (so i'm 
 Since it was produced on windows, it has some windows character (like '^M'). We have to erase them through the command: perl -p -e 's/\r$//' heart.csv heart.csv:
 	
 	1) Download heart.csv from https://www.kaggle.com/ronitf/heart-disease-uci
-	2) perl -p -e 's/\r$//' PATH/heart.csv > heart.csv to remove windows characters
-	3) the heart.csv file must be in the same directory of main.plx and naive_bayes_classification.plx
+	2) perl -p -e 's/\r$//' PATH/heart.csv > heart1.csv to remove windows characters
+	3) rm heart.csv
+	4) mv heart1.csv heart.csv
+The heart.csv file must be in the same directory of main.plx and naive_bayes_classification.plx
 
 ## Programs and Description:
 1) graph.plx: Program which execute the Posterior Rule and the Prior Rule.
