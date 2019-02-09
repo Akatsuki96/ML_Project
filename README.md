@@ -37,7 +37,7 @@ Since it was produced on windows, it has some windows character (like '^M'). We 
 
 ## Tests used in the presentation:
 		perl graph.plx 500000 0 0.8 0.5 0.5 0.3
-		perl naive_bayes_classifier.plx 0.7 2 #i've tested for different split ratio (0.3 0.4 0.1 0.7 0.9) and for different attributes (2 8 0)
+		perl naive_bayes_classifier.plx 0.7 2 #i've tested for different split ratio (0.3 0.4 0.1 0.7 0.9) and for different attributes (2 8 0 13)
 		perl main.plx
 
 ## GNUPlot: 
