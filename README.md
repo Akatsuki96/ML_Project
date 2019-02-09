@@ -1,8 +1,8 @@
 # ML_Project
 The project is composed by different perl program realized from scratch (so i'm sorry for the performance in terms of time).
 ## Set-up:
-	1) Download the repository (git clone )
-	2) go to the directory of the project (cd )
+	1) Download the repository (git clone)
+	2) go to the directory of the project (cd ML_Project/)
 	3) execute there the programs using perl (i.e. perl graph.plx ...)
 
 ## Requirements:
@@ -21,7 +21,7 @@ The project is composed by different perl program realized from scratch (so i'm 
 Since it was produced on windows, it has some windows character (like '^M'). We have to erase them through the command: perl -p -e 's/\r$//' heart.csv heart.csv:
 	
 	1) Download heart.csv from https://www.kaggle.com/ronitf/heart-disease-uci
-	2) perl -p -e 's/\r$//' heart.csv heart.csv to remove windows characters
+	2) perl -p -e 's/\r$//' PATH/heart.csv > heart.csv to remove windows characters
 
 ## Programs and Description:
 1) graph.plx: Program which execute the Posterior Rule and the Prior Rule.
