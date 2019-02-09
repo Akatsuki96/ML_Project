@@ -1,5 +1,5 @@
 # ML_Project
-The project is composed by different perl program realized from scratch (so i'm sorry for the performance in terms of time).
+The project is composed by different perl program realized from scratch (so i'm sorry for the performance).
 ## Set-up:
 	1) Download the repository (git clone)
 	2) go to the directory of the project (cd ML_Project/)
