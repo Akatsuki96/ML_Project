@@ -22,6 +22,7 @@ Since it was produced on windows, it has some windows character (like '^M'). We 
 	
 	1) Download heart.csv from https://www.kaggle.com/ronitf/heart-disease-uci
 	2) perl -p -e 's/\r$//' PATH/heart.csv > heart.csv to remove windows characters
+	3) the heart.csv file must be in the same directory of main.plx and naive_bayes_classification.plx
 
 ## Programs and Description:
 1) graph.plx: Program which execute the Posterior Rule and the Prior Rule.
